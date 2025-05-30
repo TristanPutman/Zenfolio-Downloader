@@ -178,15 +178,13 @@ zenfolio-downloader/
 │   ├── retrieval_queue.py         # Zenfolio retrieval queue handling
 │   └── statistics.py              # Download statistics tracking
 ├── 📁 utils/                      # Utility functions
-│   ├── __init__.py
-│   ├── constants.py               # Application constants
-│   ├── first_time_setup.py        # Initial setup wizard
-│   ├── helpers.py                 # General utility functions
-│   ├── interactive_menu.py        # Interactive menu system
-│   └── metadata_exporter.py       # Metadata export functionality
-├── 📄 batch_download_galleries.py # Batch download script
-├── 📄 download_complete_archive.sh # Complete archive download script
-└── 📄 BATCH_DOWNLOAD_README.md    # Batch download documentation
+    ├── __init__.py
+    ├── constants.py               # Application constants
+    ├── first_time_setup.py        # Initial setup wizard
+    ├── helpers.py                 # General utility functions
+    ├── interactive_menu.py        # Interactive menu system
+    └── metadata_exporter.py       # Metadata export functionality
+
 ```
 
 ## 🎯 Usage Examples
@@ -285,27 +283,6 @@ The interactive mode provides:
 - **✅ Verification Tools**: Verify completed downloads
 - **📋 Queue Management**: Process Zenfolio's retrieval queue
 - **📊 Status Reports**: View download progress and statistics
-
-### Batch Processing
-
-#### Complete Archive Download
-```bash
-# Download entire archive (excludes recent folders)
-./download_complete_archive.sh
-```
-
-#### Custom Batch Processing
-```bash
-# Run batch downloader with custom settings
-python batch_download_galleries.py
-```
-
-The batch downloader features:
-- **📅 Chronological Ordering**: Downloads oldest galleries first
-- **🚫 Smart Filtering**: Excludes specified folders (e.g., current year)
-- **💾 Progress Persistence**: Saves progress in `batch_download_progress.json`
-- **🔄 Resume Capability**: Continues from where it left off
-- **⏱️ Timeout Protection**: Prevents hanging on problematic galleries
 
 ## 🔧 Advanced Features
 
@@ -488,7 +465,6 @@ The application follows a modular architecture with clear separation of concerns
 
 ## 📚 Additional Documentation
 
-- **[Batch Download Guide](BATCH_DOWNLOAD_README.md)**: Detailed guide for batch processing
 - **[Architecture Plan](ARCHITECTURE_PLAN.md)**: Technical architecture overview
 - **[Debug Guide](DEBUG_GUIDE.md)**: Comprehensive debugging information
 - **[Gallery Listing](GALLERY_LISTING.md)**: Gallery structure documentation
