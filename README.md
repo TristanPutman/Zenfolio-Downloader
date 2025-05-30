@@ -177,7 +177,7 @@ zenfolio-downloader/
 │   ├── progress_tracker.py        # Progress tracking utilities
 │   ├── retrieval_queue.py         # Zenfolio retrieval queue handling
 │   └── statistics.py              # Download statistics tracking
-├── 📁 utils/                      # Utility functions
+└── 📁 utils/                      # Utility functions
     ├── __init__.py
     ├── constants.py               # Application constants
     ├── first_time_setup.py        # Initial setup wizard
