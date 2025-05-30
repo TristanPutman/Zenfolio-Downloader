@@ -1,0 +1,24 @@
+# Core dependencies
+aiohttp>=3.8.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# Progress and UI
+tqdm>=4.65.0
+click>=8.0.0
+
+# Logging
+loguru>=0.7.0
+
+# Utilities
+tenacity>=8.2.0
+pathlib2>=2.3.7; python_version < "3.4"
+
+# Development dependencies (optional)
+# Uncomment these for development work
+# pytest>=7.0.0
+# pytest-asyncio>=0.21.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
